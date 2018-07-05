@@ -56,7 +56,7 @@ class Guest:
 
     def rsvp(self, invite, rsvp_status):
         if self == invite._guest:
-            invite._guest._rsvp_status = rsvp_status
+            invite._rsvp_status = rsvp_status
         return rsvp_status
 
     def review_recipe(self, recipe, rating, comment):
