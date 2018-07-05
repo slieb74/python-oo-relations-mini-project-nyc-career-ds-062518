@@ -28,9 +28,6 @@ class DinnerParty:
 
     def guests(self):
         return [invite.guest for invite in self.invites() if invite.accepted == True]
-        # return [invite.guest for invite in Invite._all if self == invite.dinner_party]
-        # pdb.set_trace()
-        # return 'blah'
 
     def number_of_attendees(self):
         return len(self.guests())

@@ -33,5 +33,9 @@ class Invite:
     def rsvp_status(self, rsvp_status):
         self._rsvp_status = rsvp_status
 
+    @property
     def accepted(self):
         return self._rsvp_status
+    @accepted.setter
+    def accepted(self, rsvp_status):
+        self._rsvp_status = rsvp_status
