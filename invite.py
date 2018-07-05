@@ -34,4 +34,4 @@ class Invite:
         self._rsvp_status = rsvp_status
 
     def accepted(self):
-        return Guest.rsvp()
+        return Guest._rsvp_status
